@@ -1,0 +1,159 @@
+{
+  "id": "Doltograph.",
+  "id_kr": "돌토그래퍼.",
+  "CONTACT" : {
+    "name" : "김윤석",
+    "age" : 26,
+    "email" : "yundol@kakao.com",
+    "instagram" : "https://www.instagram.com/_yundol/",
+    "instagram_photo" : "https://www.instagram.com/_doltograph/",
+    "intro" : "안녕하세요. 순간 순간 추억을 사진에 담고 싶은 초보 사진가입니다.",
+    "intro_en" : "Hello, I'm a beginner photographer who wants to capture moment-to-moment memories in photos."
+  },
+
+  "picture" : [
+      {
+        "category": "LANDSCAPE",
+        "imgs": [{
+          "subject": "ZSK00063",
+          "img": "/img/landscape/ZSK00063.jpg",
+          "tag": [
+            ""
+          ]
+        },{
+          "subject": "ZSK00233",
+          "img": "/img/landscape/ZSK00233.jpg",
+          "tag": [
+            ""
+          ]
+        },{
+          "subject": "ZSK00352",
+          "img": "/img/landscape/ZSK00352.jpg",
+          "tag": [
+            ""
+          ]
+        },{
+          "subject": "ZSK00367",
+          "img": "/img/landscape/ZSK00367.jpg",
+          "tag": [
+            ""
+          ]
+        },{
+          "subject": "ZSK00536",
+          "img": "/img/landscape/ZSK00536.jpg",
+          "tag": [
+            ""
+          ]
+        },{
+          "subject": "ZSK00700",
+          "img": "/img/landscape/ZSK00700.jpg",
+          "tag": [
+            ""
+          ]
+        },{
+          "subject": "ZSK00744",
+          "img": "/img/landscape/ZSK00744.jpg",
+          "tag": [
+            ""
+          ]
+        },{
+          "subject": "ZSK01434",
+          "img": "/img/landscape/ZSK01434.jpg",
+          "tag": [
+            ""
+          ]
+        },{
+          "subject": "ZSK01439",
+          "img": "/img/landscape/ZSK01439.jpg",
+          "tag": [
+            ""
+          ]
+        },{
+          "subject": "ZSK01442",
+          "img": "/img/landscape/ZSK01442.jpg",
+          "tag": [
+            ""
+          ]
+        }]
+      },
+      {
+        "category": "HUMAN",
+        "imgs": [{
+          "subject": "ZSK00653",
+          "img": "/img/human/ZSK00653.jpg",
+          "tag": [
+            ""
+          ]
+        },{
+          "subject": "ZSK00725",
+          "img": "/img/human/ZSK00725.jpg",
+          "tag": [
+            ""
+          ]
+        }]
+      },
+      {
+        "category": "ANIMAL",
+        "imgs": [{
+          "subject": "ZSK00087",
+          "img": "/img/animal/ZSK00087.jpg",
+          "tag": [
+            "cat"
+          ]
+        },{
+          "subject": "ZSK00097",
+          "img": "/img/animal/ZSK00097.jpg",
+          "tag": [
+            "cat"
+          ]
+        },{
+          "subject": "ZSK01512",
+          "img": "/img/animal/ZSK01512.jpg",
+          "tag": [
+            "cat"
+          ]
+        },{
+          "subject": "ZSK01530",
+          "img": "/img/animal/ZSK01530.jpg",
+          "tag": [
+            "cat"
+          ]
+        },{
+          "subject": "ZSK01535",
+          "img": "/img/animal/ZSK01535.jpg",
+          "tag": [
+            "cat"
+          ]
+        }]
+      },
+      {
+      "category": "OBJECT",
+        "imgs": [{
+          "subject": "ZSK00003",
+          "img": "/img/object/ZSK00003.jpg",
+          "tag": [
+            "car", "k5", "kia"
+          ]
+        },{
+          "subject": "ZSK00005",
+          "img": "/img/object/ZSK00005.jpg",
+          "tag": [
+            "car", "k5", "kia"
+          ]
+        },{
+          "subject": "ZSK00006",
+          "img": "/img/object/ZSK00006.jpg",
+          "tag": [
+            "car", "k5", "kia"
+          ]
+        },{
+          "subject": "ZSK00008",
+          "img": "/img/object/ZSK00008.jpg",
+          "tag": [
+            "car", "k5", "kia"
+          ]
+        }]
+      }
+    ]
+
+}
