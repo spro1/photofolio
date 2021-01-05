@@ -31,9 +31,7 @@ class App extends Component {
         this.fetchData();
     }
     render() {
-        const path = document.location.pathname.replace('/photofolio/','');
-
-        console.log(path)
+        const path = document.location.pathname.replace('/','');
         if(path===""){
             $('a').removeClass('on');
             $('.CONTACT').addClass('on');
@@ -45,29 +43,29 @@ class App extends Component {
         return (
         <div>
             <Header id={jsonData.id} id_kr={jsonData.id_kr}/>
-            <BrowserRouter className="menu">
+            <BrowserRouter>
                 <div className="menu">
-                    <Link to='/photofolio' className="CONTACT">CONTACT</Link>
+                    <Link to='/' className="CONTACT">CONTACT</Link>
                     <Link to={{
-                        pathname: '/photofolio/ALL',
+                        pathname: '/ALL',
                         state:{
                             data : this.state.all
                         }
                     }} className="ALL">ALL</Link>
                     {jsonData.picture.map((item, key) =>(
                         <Link to={{
-                            pathname:`/photofolio/${item.category}`,
+                            pathname:`/${item.category}`,
                             state: {
                                 data : item.imgs
                             }
                         }} className={item.category}>{item.category}</Link>
                     ))}
                     <Switch>
-                        <Route exact path='/photofolio/ALL' component={Content}/>
+                        <Route exact path="/ALL" component={Content}/>
                         {jsonData.picture.map((item, key) =>(
-                            <Route exact path={`/photofolio/${item.category}`} component={Content}/>
+                            <Route exact path={`/${item.category}`} component={Content}/>
                         ))}
-                        <Route exact path='/photofolio' component={Contact}/>
+                        <Route exact path="/" component={Contact}/>
                     </Switch>
                 </div>
             </BrowserRouter>
