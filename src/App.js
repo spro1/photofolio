@@ -1,7 +1,8 @@
-import Footer from './components/Footer';
 import React, {Component} from 'react';
 import Header from "./components/Header";
 import Content from "./components/Content";
+import Contact from "./components/Contact";
+import Footer from './components/Footer';
 import { BrowserRouter, Route, Link, Switch, Redirect } from "react-router-dom";
 import $ from "jquery";
 import jsonData from "./static/data/data.json";
@@ -14,20 +15,23 @@ class App extends Component {
         }
     }
 
-    componentDidMount() {
-        $('a').click(function(){
-            $('a').removeClass('on');
-            $(this).addClass('on');
-        });
+    fetchData(){
         const data = []
         jsonData.picture.map(item =>(
             data.push(...item.imgs)
         ));
         this.setState({all:data})
     }
+
+    componentDidMount() {
+        $('a').click(function(){
+            $('a').removeClass('on');
+            $(this).addClass('on');
+        });
+        this.fetchData();
+    }
     render() {
         const path = document.location.pathname.replace('/','');
-        console.log(path);
         if(path===""){
             $('a').removeClass('on');
             $('.CONTACT').addClass('on');
@@ -36,13 +40,12 @@ class App extends Component {
             $('.'+path).addClass('on');
         }
 
-
         return (
         <div>
             <Header id={jsonData.id} id_kr={jsonData.id_kr}/>
             <BrowserRouter>
                 <div className="menu">
-                    <Link to="/" className="CONTACT">CONTACT</Link>
+                    <Link to='/' className="CONTACT">CONTACT</Link>
                     <Link to={{
                         pathname: '/ALL',
                         state:{
@@ -62,10 +65,9 @@ class App extends Component {
                         {jsonData.picture.map((item, key) =>(
                             <Route exact path={`/${item.category}`} component={Content}/>
                         ))}
-                        <Route exact path="/" component={Photo}/>
+                        <Route exact path="/" component={Contact}/>
                     </Switch>
                 </div>
-
             </BrowserRouter>
             <Footer/>
         </div>
@@ -73,8 +75,5 @@ class App extends Component {
   }
 }
 
-function Photo({match}) {
-    return <h2>여기서 사진을 감상하세요.</h2>
-}
 
 export default App;

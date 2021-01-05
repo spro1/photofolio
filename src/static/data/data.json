@@ -1,14 +1,17 @@
 {
   "id": "Doltograph.",
   "id_kr": "돌토그래퍼.",
-  "CONTACT" : {
+  "contact" : {
     "name" : "김윤석",
     "age" : 26,
+    "country" : "KR",
     "email" : "yundol@kakao.com",
     "instagram" : "https://www.instagram.com/_yundol/",
     "instagram_photo" : "https://www.instagram.com/_doltograph/",
     "intro" : "안녕하세요. 순간 순간 추억을 사진에 담고 싶은 초보 사진가입니다.",
-    "intro_en" : "Hello, I'm a beginner photographer who wants to capture moment-to-moment memories in photos."
+    "intro_en" : "Hello, I'm a beginner photographer who wants to capture moment-to-moment memories in photos.",
+    "github" : "https://github.com/spro1",
+    "profile_img" : "/img/profile/profile.jpg"
   },
 
   "picture" : [
@@ -74,6 +77,12 @@
           "tag": [
             ""
           ]
+        },{
+          "subject": "ZSK00756",
+          "img": "/img/landscape/ZSK00756.jpg",
+          "tag": [
+            ""
+          ]
         }]
       },
       {
@@ -124,11 +133,47 @@
           "tag": [
             "cat"
           ]
+        },{
+          "subject": "ZSK00071",
+          "img": "/img/animal/ZSK00071.jpg",
+          "tag": [
+            "cat"
+          ]
+        },{
+          "subject": "ZSK00806",
+          "img": "/img/animal/ZSK00806.jpg",
+          "tag": [
+            ""
+          ]
         }]
       },
       {
       "category": "OBJECT",
         "imgs": [{
+          "subject": "ZSK00001",
+          "img": "/img/object/ZSK00001.jpg",
+          "tag": [
+            "car", "k5", "kia"
+          ]
+        },{
+          "subject": "ZSK00004",
+          "img": "/img/object/ZSK00004.jpg",
+          "tag": [
+            "car", "k5", "kia"
+          ]
+        },{
+          "subject": "ZSK00007",
+          "img": "/img/object/ZSK00007.jpg",
+          "tag": [
+            "car", "k5", "kia"
+          ]
+        },{
+          "subject": "ZSK00009",
+          "img": "/img/object/ZSK00009.jpg",
+          "tag": [
+            "car", "k5", "kia"
+          ]
+        },{
           "subject": "ZSK00003",
           "img": "/img/object/ZSK00003.jpg",
           "tag": [
@@ -151,6 +196,12 @@
           "img": "/img/object/ZSK00008.jpg",
           "tag": [
             "car", "k5", "kia"
+          ]
+        },{
+          "subject": "ZSK00480",
+          "img": "/img/object/ZSK00480.jpg",
+          "tag": [
+            ""
           ]
         }]
       }

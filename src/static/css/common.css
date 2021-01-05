@@ -28,6 +28,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* common */
 html {
     position: relative;
@@ -67,9 +81,6 @@ body{
     color: #000000;
 }
 
-.menu > a:active{
-    color: #000000;
-}
 
 .menu > a.on{
     color: #000000;
@@ -79,6 +90,49 @@ body{
     margin-top: 50px;
 }
 
+.container-md{
+    margin-top: 50px;
+}
+
+.contact_desc a{
+    text-decoration: none;
+    color: #000;
+}
+
+.contact_img{
+    margin-bottom: 30px;
+}
+.contact_desc{
+    margin-left: 15px;
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    font-family: 'InfinitySans-RegularA1', serif;
+}
+
+.intro{
+    margin-top: 30px;
+}
+
+.modal.on {
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+
+}
+
+.modal-image{
+    display: inline-block;
+    margin-top: 20px;
+    vertical-align: middle;
+    horiz-align: center;
+    text-align: center;
+}
+
+.fade-in{
+    background-color: rgba(255, 255, 255, 0.5);
+}
 
 /* footer */
 .footer{
