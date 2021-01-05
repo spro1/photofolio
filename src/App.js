@@ -44,9 +44,9 @@ class App extends Component {
         return (
         <div>
             <Header id={jsonData.id} id_kr={jsonData.id_kr}/>
-            <BrowserRouter>
+            <BrowserRouter className="menu">
                 <div className="menu">
-                    <Link to='/photofolio' className="CONTACT">CONTACT</Link>
+                    <Link to="/photofolio" className="CONTACT">CONTACT</Link>
                     <Link to={{
                         pathname: '/photofolio/ALL',
                         state:{
