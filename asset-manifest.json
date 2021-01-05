@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/photofolio/static/css/main.7b665f08.chunk.css",
-    "main.js": "/photofolio/static/js/main.17d05bdc.chunk.js",
-    "main.js.map": "/photofolio/static/js/main.17d05bdc.chunk.js.map",
+    "main.js": "/photofolio/static/js/main.2f4536dc.chunk.js",
+    "main.js.map": "/photofolio/static/js/main.2f4536dc.chunk.js.map",
     "runtime-main.js": "/photofolio/static/js/runtime-main.b82040a7.js",
     "runtime-main.js.map": "/photofolio/static/js/runtime-main.b82040a7.js.map",
     "static/css/2.aece054c.chunk.css": "/photofolio/static/css/2.aece054c.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.aece054c.chunk.css",
     "static/js/2.5f5b8d4a.chunk.js",
     "static/css/main.7b665f08.chunk.css",
-    "static/js/main.17d05bdc.chunk.js"
+    "static/js/main.2f4536dc.chunk.js"
   ]
 }
