@@ -31,7 +31,8 @@ class App extends Component {
         this.fetchData();
     }
     render() {
-        const path = document.location.pathname.replace('/','');
+        let path = document.location.pathname.replace('/','');
+        path = path.replace('/photofolio', '');
         if(path===""){
             $('a').removeClass('on');
             $('.CONTACT').addClass('on');
@@ -45,27 +46,27 @@ class App extends Component {
             <Header id={jsonData.id} id_kr={jsonData.id_kr}/>
             <BrowserRouter>
                 <div className="menu">
-                    <Link to='/' className="CONTACT">CONTACT</Link>
+                    <Link to='/photofolio' className="CONTACT">CONTACT</Link>
                     <Link to={{
-                        pathname: '/ALL',
+                        pathname: '/photofolio/ALL',
                         state:{
                             data : this.state.all
                         }
                     }} className="ALL">ALL</Link>
                     {jsonData.picture.map((item, key) =>(
                         <Link to={{
-                            pathname:`/${item.category}`,
+                            pathname:`/photofolio/${item.category}`,
                             state: {
                                 data : item.imgs
                             }
                         }} className={item.category}>{item.category}</Link>
                     ))}
                     <Switch>
-                        <Route exact path="/ALL" component={Content}/>
+                        <Route exact path="/photofolio/ALL" component={Content}/>
                         {jsonData.picture.map((item, key) =>(
-                            <Route exact path={`/${item.category}`} component={Content}/>
+                            <Route exact path={`/photofolio/${item.category}`} component={Content}/>
                         ))}
-                        <Route exact path="/" component={Contact}/>
+                        <Route exact path="/photofolio" component={Contact}/>
                     </Switch>
                 </div>
             </BrowserRouter>
