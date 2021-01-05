@@ -6,6 +6,9 @@ import Footer from './components/Footer';
 import { BrowserRouter, Route, Link, Switch, Redirect } from "react-router-dom";
 import $ from "jquery";
 import jsonData from "./static/data/data.json";
+import Container from "react-bootstrap/cjs/Container";
+import Col from "react-bootstrap/cjs/Col";
+import Row from "react-bootstrap/cjs/Row";
 
 class App extends Component {
     constructor(props) {
@@ -41,10 +44,16 @@ class App extends Component {
         }
 
         return (
-        <div>
-            <Header id={jsonData.id} id_kr={jsonData.id_kr}/>
+        <Container>
+            <Row>
+                <Col md={{span: 8, offset: 2}}>
+                    <Header id={jsonData.id} id_kr={jsonData.id_kr}/>
+                </Col>
+            </Row>
             <BrowserRouter>
-                <div className="menu">
+                <Row>
+                <Col md={{span: 8, offset: 2}}>
+                    <div className="menu">
                     <Link to='/' className="CONTACT">CONTACT</Link>
                     <Link to={{
                         pathname: '/ALL',
@@ -60,6 +69,7 @@ class App extends Component {
                             }
                         }} className={item.category}>{item.category}</Link>
                     ))}
+
                     <Switch>
                         <Route exact path="/ALL" component={Content}/>
                         {jsonData.picture.map((item, key) =>(
@@ -67,10 +77,12 @@ class App extends Component {
                         ))}
                         <Route exact path="/" component={Contact}/>
                     </Switch>
-                </div>
+                    </div>
+                </Col>
+                </Row>
             </BrowserRouter>
             <Footer/>
-        </div>
+        </Container>
     );
   }
 }
